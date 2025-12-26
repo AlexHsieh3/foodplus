@@ -8,7 +8,7 @@
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center">
           <a href="#" class="flex items-center gap-2">
-            <img src="/images/logo/logo.png" alt="food+" class="h-10 w-auto" />
+            <img src="/images/logo/logo.png" alt="food+" class="h-14 w-auto" />
           </a>
         </div>
 
