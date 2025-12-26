@@ -1,31 +1,81 @@
-# food+ 網站專案進度
+# FoodPlus 網站專案進度
 
 ## 記錄日期
 2025-12-26
 
-## 目前架構決策
-- ❌ 已放棄 Wix 方案
-- ✅ 改用 **Cloudflare Pages + GitHub + GoDaddy** 架構
+## 專案架構
+- **前端框架**: Vue 3 + Vite 7
+- **CSS 框架**: Tailwind CSS v4
+- **版本控制**: GitHub
+- **部署平台**: Cloudflare Pages
+- **網域**: foodplus.pages.dev
 
-## 已完成
-- [x] GitHub MCP 已安裝（需重啟 Claude Code 完成認證）
+---
 
-## 待辦事項
-1. **重啟 Claude Code** - 完成 GitHub MCP 的 OAuth 認證
-   - 執行 `/mcp` → 選擇 github → Authenticate
-2. **建立 GitHub Repository** - 存放 food+ 網站原始碼
-3. **設定 Cloudflare Pages** - 連結 GitHub 自動部署
-4. **測試部署** - 確認網站正常運作
-5. **GoDaddy DNS 設定** - 將網域指向 Cloudflare
+## 今日完成事項 (2025-12-26)
 
-## food+ 網站設計規格
-- **主色調**: #6B9E8E (薄荷綠)
-- **輔色調**: #D99468 (溫暖橙色)
-- **字體**: Outfit (標題), DM Sans (內文)
-- **框架**: Tailwind CSS
-- **內容**: 天然超級食物產品頁面 (Night Blend, Youth Blend)
+### 1. Vue 專案建立 ✅
+- 使用 `npm create vite@latest` 建立 Vue 3 專案
+- 安裝並設定 Tailwind CSS v4
+- 建立基本頁面結構（Header, Hero, Features, Footer）
+- 專案目錄結構：`foodplus/app/`
 
-## 下次繼續步驟
-1. 重啟 Claude Code
-2. 執行 `/mcp` 進行 GitHub 認證
-3. 建立 Repository 並推送 food+ 網站程式碼
+### 2. GitHub 設定 ✅
+- 設定 SSH key 連接 GitHub
+  - 使用現有的 `~/.ssh/id_ed25519`
+  - 新增 GitHub SSH config 到 `~/.ssh/config`
+- 建立 GitHub 倉庫：https://github.com/AlexHsieh3/foodplus
+- 成功推送程式碼
+
+### 3. Cloudflare Pages 部署 ✅
+- 連接 GitHub 倉庫到 Cloudflare Pages
+- 建置設定：
+  - Framework preset: Vue
+  - Build command: `npm run build`
+  - Build output directory: `dist`
+  - Root directory: `app`
+- 部署成功：https://foodplus.pages.dev
+
+### 4. Cloudflare MCP 設定 ✅
+- 建立 Cloudflare API Token（完整權限）
+- 設定 Claude Code MCP：
+  ```bash
+  claude mcp add cloudflare -e CLOUDFLARE_API_TOKEN=xxx -- npx -y @cloudflare/mcp-server-cloudflare
+  ```
+- 需重啟 Claude Code 生效
+
+---
+
+## 專案結構
+```
+foodplus/
+├── .gitignore
+├── memo/
+│   └── progress.md
+└── app/                    ← Vue 專案
+    ├── index.html
+    ├── package.json
+    ├── vite.config.js
+    ├── public/
+    │   └── vite.svg
+    └── src/
+        ├── App.vue         ← 主頁面
+        ├── main.js
+        ├── style.css       ← Tailwind CSS
+        ├── assets/
+        └── components/
+```
+
+---
+
+## 相關連結
+- **GitHub**: https://github.com/AlexHsieh3/foodplus
+- **線上網站**: https://foodplus.pages.dev
+- **Cloudflare Dashboard**: https://dash.cloudflare.com
+
+---
+
+## 下一步待辦
+- [ ] 自訂網域設定（GoDaddy DNS 指向 Cloudflare）
+- [ ] 完善頁面內容和設計
+- [ ] 新增更多頁面（關於、聯絡等）
