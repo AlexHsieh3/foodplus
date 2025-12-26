@@ -1,7 +1,7 @@
 <script setup>
 const productImages = {
-  night: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDmtfmxWuz52RRvWEmdGanaDva5NfiKUiQ_qJTObMxGuz4lknB2h0uaNv7W7CMUeHne28bh8ROphaDk_8mnNwiZkCee5kjJdqsgYKkBA4sDsl4WGQDLXLJ8ClPdaBjYSgZzS4yyEC9b5fLhRhQ0X-_ppB5imkMCOSALv9OVnCCIcAsrlQM5pKI_hSI28PuotzoUV2-Cdmlb8Ome2hhhSZy1SFnwvZz1-TLMx9i-QjpHKi-ZIexdmVztbcpAKKZE1CeffI3_1nOyfqg',
-  youth: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBoGUJvYA3I_ZLCOJ1s68J6JTgs9dQ3EU0gjuRd2GHQx5W9eXDE-iy9Bn5Oeosqzd5IlqyiUiPJ40Yjb6KiW4wgZI-ikuIOK7z3eR8h9XFpyDgySimR2KrwUrsqOzxjLT_feFTW51MZsYV1L2l55UcVmfLdnGdVqQeYJhIh7pCHR80s4CuoyQU1f_6kGBarsDQSGZr5T2tG0e98sKgMya7i11F7uX2SdP-X7gM2w7BllJZG1T3nh5OJjkRasMrYvgyjBlEpER39Pzs'
+  night: '/images/product/product2.png',  // 大麥苗香蕉 晚安特調
+  youth: '/images/product/product1.png'   // 番茄覆盆子 青春特調
 }
 </script>
 

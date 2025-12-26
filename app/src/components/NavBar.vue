@@ -7,8 +7,8 @@
       <div class="flex justify-between items-center h-20">
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center">
-          <a href="#" class="font-display font-bold text-3xl tracking-tight text-gray-900">
-            food<span class="text-primary">+</span>
+          <a href="#" class="flex items-center gap-2">
+            <img src="/images/logo/logo.png" alt="food+" class="h-10 w-auto" />
           </a>
         </div>
 

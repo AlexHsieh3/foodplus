@@ -14,7 +14,7 @@ const products = [
     ],
     buttonColor: 'bg-primary hover:bg-primary-dark',
     price: 'NT$ 720',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD4HL8xmlVSTFQl-Iz9L-0n0hYkmvZjNJ6w8kKkzJzKaW87V6iIb-q8GYFZxmmBScKChW77FHyyBHrmGvN32GT_NjQpsH72NlQtrRT_Ot-JzHQkEocN6ISu2LEZ5_yEUF50Tf7gMvQcLxdyFNRHjg3bYUtbIZQSzNMU1zGt6sNHrQrczt3b9keIkY-I-Pvdk8seHglicPCUNvbSSH4fVqtRQQYCxZjqWaCpLA2tRReXQAOtR0CSdJ1CyesLpK-uABnjkUIQqVkku6U',
+    image: '/images/product/product2.png',
     bgGradient: 'from-green-50 to-emerald-100',
     accentColor: 'primary'
   },
@@ -32,7 +32,7 @@ const products = [
     ],
     buttonColor: 'bg-secondary hover:bg-orange-600',
     price: 'NT$ 720',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBpT4hOTqf9zYpUAu_uelkVJdmTStxDBqJWWk1KJxjiePjL0SetLyD4vivLXVY604g7dqZ2rkAWXg5vOTrqX9qFK0KALHl8Zod6H6LR2pSREMXoCcKIN7-zu0vc1HHeBht6akXhbko30dlSSyDKcpGYXYNafAnl4Jd9vWuT6CPBCeHwAaBL--owJ-Q8qY7jETlTt9-199ykvFKWbzSjNrl2PQ2_IfW6RNORmORB5tJQh-fRrOaYOZVcaS6edS8DR79ghoniUTetSRQ',
+    image: '/images/product/product1.png',
     bgGradient: 'from-orange-50 to-red-50',
     accentColor: 'secondary'
   }

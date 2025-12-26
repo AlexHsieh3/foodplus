@@ -9,7 +9,7 @@
         <div class="relative">
           <div class="absolute inset-0 bg-primary/10 rounded-3xl transform rotate-3"></div>
           <img
-            src="https://static.wixstatic.com/media/f0d615_31af38d0ed0d44a69839e6abb35b7372~mv2.jpg/v1/fill/w_540,h_320,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1953435-E20250825%20%E5%BD%A204%20%E9%99%B3%E9%A0%A1%E7%87%95%20318.jpg"
+            src="/images/team/founder.jpg"
             alt="創辦人 陳頡燕"
             class="relative rounded-3xl shadow-xl w-full h-auto object-cover"
           />
@@ -43,9 +43,11 @@
               「因為媽媽說，"我不想要再吃瓶瓶罐罐的保健食品了"」
             </p>
             <div class="flex items-center gap-3">
-              <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
-                <span class="material-icons-round text-primary">person</span>
-              </div>
+              <img
+                src="/images/team/founder-smile.jpg"
+                alt="陳頡燕"
+                class="w-12 h-12 rounded-full object-cover"
+              />
               <div>
                 <h4 class="font-bold text-gray-900">陳頡燕</h4>
                 <p class="text-sm text-gray-500">創辦人・美國註冊營養師</p>
