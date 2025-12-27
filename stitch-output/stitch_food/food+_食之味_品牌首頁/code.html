@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>food+ 食之味 - 專為熟齡設計的營養專家</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700;900&amp;family=Noto+Sans+TC:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eea62b",
+                        "primary-dark": "#d48e15",
+                        "background-light": "#fcfaf8", // Warm cream
+                        "background-dark": "#221b10",
+                        "text-main": "#1b160d", // Dark warm brown
+                        "text-secondary": "#5c4d3c", // Medium warm brown
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "Noto Sans TC", "sans-serif"],
+                        "body": ["Noto Sans TC", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', 'Noto Sans TC', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main antialiased min-h-screen flex flex-col">
+<!-- Navigation -->
+<header class="sticky top-0 z-50 w-full bg-[#fcfaf8]/95 backdrop-blur-sm border-b border-[#e7dfcf]">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<!-- Logo -->
+<div class="flex items-center gap-3">
+<div class="size-10 text-primary flex items-center justify-center bg-primary/10 rounded-full">
+<span class="material-symbols-outlined text-3xl">local_cafe</span>
+</div>
+<div>
+<h1 class="text-text-main text-2xl font-black tracking-tighter leading-none">food+</h1>
+<span class="text-text-secondary text-sm font-bold tracking-widest">食之味</span>
+</div>
+</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex gap-6">
+<a class="text-text-main text-lg font-medium hover:text-primary transition-colors" href="#">首頁</a>
+<a class="text-text-main text-lg font-medium hover:text-primary transition-colors" href="#">產品介紹</a>
+<a class="text-text-main text-lg font-medium hover:text-primary transition-colors" href="#">營養師專欄</a>
+<a class="text-text-main text-lg font-medium hover:text-primary transition-colors" href="#">關於我們</a>
+</nav>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-3">
+<button aria-label="增加字體大小" class="hidden sm:flex items-center justify-center h-12 px-6 bg-[#f3efe7] text-text-main text-base font-bold rounded-lg hover:bg-[#e7dfcf] transition-colors">
+<span class="material-symbols-outlined mr-2">text_increase</span>
+<span class="truncate">字體放大</span>
+</button>
+<button class="flex items-center justify-center h-12 px-6 bg-primary text-text-main text-base font-bold rounded-lg hover:bg-primary-dark transition-colors shadow-sm">
+<span class="truncate">立即選購</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow w-full">
+<!-- Hero Section -->
+<section class="relative w-full py-8 lg:py-12 px-4 sm:px-6 lg:px-8 max-w-[1280px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center rounded-2xl overflow-hidden bg-white shadow-sm border border-[#f3efe7]">
+<!-- Hero Content -->
+<div class="flex flex-col gap-6 p-8 lg:p-16 order-2 lg:order-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 w-fit">
+<span class="material-symbols-outlined text-primary text-sm">verified</span>
+<span class="text-text-main text-sm font-bold">專為 50+ 熟齡族群設計</span>
+</div>
+<h2 class="text-text-main text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.15] tracking-tight">
+                        好眠養生，<br/>
+<span class="text-primary decoration-4 underline-offset-4">從一杯開始</span>
+</h2>
+<p class="text-text-secondary text-lg sm:text-xl font-normal leading-relaxed max-w-xl">
+                        專為熟齡設計的植萃全營養飲品，每一口都是對身體的溫柔呵護。拒絕吞嚥膠囊，回歸最自然的飲食方式。
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<button class="flex items-center justify-center h-14 px-8 bg-primary text-text-main text-lg font-bold rounded-lg hover:bg-primary-dark transition-colors shadow-md">
+                            立即體驗好眠
+                            <span class="material-symbols-outlined ml-2">arrow_forward</span>
+</button>
+<button class="flex items-center justify-center h-14 px-8 bg-[#f3efe7] text-text-main text-lg font-bold rounded-lg hover:bg-[#ece4d5] transition-colors">
+                            了解全成分
+                        </button>
+</div>
+<div class="flex items-center gap-6 mt-4 pt-6 border-t border-[#f3efe7]">
+<div class="flex -space-x-3">
+<img alt="Customer avatar" class="w-10 h-10 rounded-full border-2 border-white object-cover" data-alt="portrait of a smiling senior woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3-Ozv4LhT3e9bg54mBBMlQemwaxA4W4BkEhrs7-bm0Hq5VUZPNKJhifxn1YezeFlIbU-Y5oRpOtunooM9G3cudQCd6ITgNITLdNBSYbC7pDkQSchPPiQIb_v9zEHhmgce7w2jwoCAkNbXeFBT3PtUCzGbMYjBuFO9hGSLbt6t7C1iTOJTu8Kb5X_7xfLQq3oL5rJJ439MFIArmNJf02I344Xzza3nC21L6n9IJj7sku4JX0-AuMsfcCkmAiPoeeo8rbTDDoI_EOk"/>
+<img alt="Customer avatar" class="w-10 h-10 rounded-full border-2 border-white object-cover" data-alt="portrait of a smiling senior man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLOXxUQQDH5xDhVzhC1VPJeQXqsJYxXWO-aSdQ5rIAWiHVdZdV7lzsCDuJx2Ar-6cFHhRXEiHa15OGQ45Bniip1Z98fpWfEbK0MSJyjNPxhpwPPXDdwWrlVfbNNO-aak0rwLMwTNqev6phfUpkoUAPBCnE6CPI5CeDObISQCYyW9HTtZyYLmp3187YlVd-GV3GkDQsO-oldKwYaPXZbExg2cxWc2AkJ1EbFYxVzRcyFIkXg7RHm0Sa4t9aDHU1x023oLJQiprOo64"/>
+<img alt="Customer avatar" class="w-10 h-10 rounded-full border-2 border-white object-cover" data-alt="portrait of a middle aged man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCGcNl6UhRQ_87bEH-w8JOwqgKUZN70UpcGbSHmTk2OoriwclvrFjtkt9mbMW2yTczKxMbi4grESWbtYdlewQNvLXfIT3S8t23Kx1vgSVdqWvGE0FOEQVHvHj9Gup7GCzWWcuv5JedX1G2RlMPo0Hj7BYNiy-JPVR9zwurb7OaKIoFUc5u3sb_1-U-M7TXIsf9xRxX6HbYgvWx-bDW2Xy6_ouoTG6618w-4LgdreC2iM3Pj_T8IHL-RuupE9ugLPqNZgZNNxZWHFQ"/>
+<div class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-white bg-gray-100 text-xs font-bold text-gray-600">+2k</div>
+</div>
+<p class="text-text-secondary text-base font-medium">超過 2,000 位家庭的安心選擇</p>
+</div>
+</div>
+<!-- Hero Image -->
+<div class="relative h-[400px] lg:h-full min-h-[500px] bg-cover bg-center order-1 lg:order-2" data-alt="Close up of a warm cup of herbal tea held by gentle hands in a cozy knitted sweater environment" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqAeUocOveGafjQafi7i9RbDDQ0qZ9rcykv9nj-UjXp31t6AqnjuLfW1xkOMusJRLKoOeWbteqxcnPGK94k2ywJ2kuP-2OCUgfD01_9A8Qmd27_8MO2rnAnyqowanl8xVCPetc5ZI0EHohTDkyx-SU98aXSEhGU4zlGFZ8Ox5eFovJdvpK_Rr5yesNqPiE_97xMFv3Ht0R8ZnaHVCz2WtesDUMNwcyHqPaGLvJk5P-YRXHTJGgNL2-9hzhyykN9CbbF8qv_cdHW8Y');">
+<div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent lg:bg-gradient-to-l"></div>
+</div>
+</div>
+</section>
+<!-- Feature Section -->
+<section class="py-16 px-4 sm:px-6 lg:px-8 max-w-[1280px] mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-text-main text-3xl sm:text-4xl font-black mb-4">三大核心價值，守護您的健康</h2>
+<p class="text-text-secondary text-lg sm:text-xl max-w-2xl mx-auto">
+                    我們堅持使用天然食材，拒絕化學添加，只給您最純粹的營養。
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+<!-- Feature 1 -->
+<div class="flex flex-col gap-4 p-8 rounded-xl border border-[#e7dfcf] bg-white hover:shadow-lg transition-shadow duration-300">
+<div class="w-14 h-14 rounded-full bg-[#fcfaf8] flex items-center justify-center text-primary mb-2 border border-[#e7dfcf]">
+<span class="material-symbols-outlined text-4xl">eco</span>
+</div>
+<h3 class="text-text-main text-2xl font-bold">全食物營養</h3>
+<p class="text-text-secondary text-lg leading-relaxed">
+                        保留食材完整精華，不僅是萃取物，而是完整的食物纖維與微量元素，營養不流失，腸道好吸收。
+                    </p>
+</div>
+<!-- Feature 2 -->
+<div class="flex flex-col gap-4 p-8 rounded-xl border border-[#e7dfcf] bg-white hover:shadow-lg transition-shadow duration-300">
+<div class="w-14 h-14 rounded-full bg-[#fcfaf8] flex items-center justify-center text-primary mb-2 border border-[#e7dfcf]">
+<span class="material-symbols-outlined text-4xl">health_and_safety</span>
+</div>
+<h3 class="text-text-main text-2xl font-bold">無添加保證</h3>
+<p class="text-text-secondary text-lg leading-relaxed">
+                        您的健康我們嚴格把關。全系列產品無色素、無香精、無防腐劑，通過高規格檢驗，安心無負擔。
+                    </p>
+</div>
+<!-- Feature 3 -->
+<div class="flex flex-col gap-4 p-8 rounded-xl border border-[#e7dfcf] bg-white hover:shadow-lg transition-shadow duration-300">
+<div class="w-14 h-14 rounded-full bg-[#fcfaf8] flex items-center justify-center text-primary mb-2 border border-[#e7dfcf]">
+<span class="material-symbols-outlined text-4xl">bedtime</span>
+</div>
+<h3 class="text-text-main text-2xl font-bold">植萃助眠配方</h3>
+<p class="text-text-secondary text-lg leading-relaxed">
+                        添加酸棗仁、芝麻素等天然草本植萃，不含藥性，溫和幫助放鬆身心，提升夜間睡眠品質。
+                    </p>
+</div>
+</div>
+</section>
+<!-- Trust / Professional Validation Section -->
+<section class="py-16 bg-[#f3efe7]">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-10">
+<h2 class="text-text-main text-3xl sm:text-4xl font-black">專業營養師團隊，誠心推薦</h2>
+</div>
+<div class="bg-white rounded-2xl p-6 md:p-10 lg:p-12 shadow-sm flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+<div class="w-full lg:w-1/3 aspect-square lg:aspect-[3/4] rounded-xl bg-cover bg-center shadow-inner relative overflow-hidden" data-alt="Portrait of a female doctor or nutritionist wearing a white coat smiling kindly in a bright office" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvRLSsR5B1EQrSOv9mJsGgCWi_E2nNzA9co5m5BRpJzNAhW7e0xT_OUS86nY9GPh2xiwIEFLkvvCMYcTFpdve_55fVthW-TtVSW0zke7VNGyvCt261Ei3GVn7YCoxcVBnDaKUJuG-qT7re1xYdkTgG8zMdD26bFk2RvwlVci9ltBCyGSyBvLjN-qIwrtXUsJ8mqo1zqkmUoE_f9ozVhgBQe_TpeYPIUsYOT_SVypN5VIMUtEJIdaHDH9cXvsntPXVMnR23rl8gPq8');">
+<div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6 text-white lg:hidden">
+<p class="font-bold text-xl">林雅婷 博士</p>
+<p class="text-sm opacity-90">food+ 首席營養顧問</p>
+</div>
+</div>
+<div class="flex-1 flex flex-col gap-6">
+<div class="hidden lg:block">
+<p class="text-2xl font-bold text-text-main">林雅婷 博士</p>
+<p class="text-lg text-primary font-medium">food+ 首席營養顧問 | 前醫學中心資深營養師</p>
+</div>
+<div class="relative">
+<span class="material-symbols-outlined text-6xl text-[#f3efe7] absolute -top-8 -left-4 -z-10">format_quote</span>
+<blockquote class="text-xl sm:text-2xl font-medium leading-relaxed text-text-main italic">
+                                「隨著年齡增長，吸收能力與睡眠品質往往是長輩最困擾的問題。針對熟齡族群的生理需求，我們精心調配了最適合的營養比例。這不只是一杯飲品，更是守護您每日健康的承諾。」
+                            </blockquote>
+</div>
+<div class="flex flex-col gap-4 mt-4">
+<p class="text-text-secondary font-bold text-lg">嚴格檢驗，只為讓您安心：</p>
+<div class="flex flex-wrap gap-4 items-center">
+<div class="px-4 py-2 border border-[#e7dfcf] rounded bg-[#fcfaf8] text-sm font-bold text-text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600">check_circle</span> SGS 檢驗合格
+                                </div>
+<div class="px-4 py-2 border border-[#e7dfcf] rounded bg-[#fcfaf8] text-sm font-bold text-text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600">check_circle</span> HACCP 認證工廠
+                                </div>
+<div class="px-4 py-2 border border-[#e7dfcf] rounded bg-[#fcfaf8] text-sm font-bold text-text-secondary flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600">check_circle</span> ISO 22000 認證
+                                </div>
+<button class="text-primary font-bold text-lg hover:underline flex items-center">
+                                    查看完整檢驗報告 <span class="material-symbols-outlined text-sm ml-1">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Usage Scenarios / Lifestyle Section -->
+<section class="py-16 lg:py-24 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<h2 class="text-text-main text-3xl sm:text-4xl font-black mb-4">全天候的營養守護</h2>
+<p class="text-text-secondary text-xl">無論何時，food+ 都是您最貼心的健康夥伴</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Morning -->
+<div class="group rounded-2xl overflow-hidden cursor-pointer">
+<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Bright morning sunlight hitting a healthy breakfast table with fruits and oatmeal" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCpBxDQdzjlUbrnXCmva1ye0C-lpIcBJLu0jefKwjW-luTIP6Ik3FWkFQ1-ryAaYf64VllAmJ1mnd4EXFj8LfBkMIOExHZEkluUqnP5yCBWc-f-LvGc5aOk0z8fGjAGpQwDeNdZ13mdJgMPlQoukVl7hO7KjPVmLQkU9QaKStBdK56KLajokHHxyk13esJ9PbQE_2G5S64A7Fc2hDCXny38zIBWb4YeLiCbti6vR0lifd_a-yi9N5A9E0yMYEnqKVSN1-BWhAAtyLA');">
+</div>
+<div class="p-6 bg-white border border-t-0 border-[#f3efe7] rounded-b-2xl shadow-sm">
+<div class="flex items-center gap-2 mb-2 text-primary">
+<span class="material-symbols-outlined">wb_sunny</span>
+<span class="font-bold text-sm tracking-wide">MORNING</span>
+</div>
+<h3 class="text-2xl font-bold text-text-main mb-2">晨間活力</h3>
+<p class="text-text-secondary text-lg">一杯溫熱的營養，喚醒沈睡的身體，為新的一天注入滿滿元氣。</p>
+</div>
+</div>
+<!-- Afternoon -->
+<div class="group rounded-2xl overflow-hidden cursor-pointer">
+<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Person reading a book in a cozy chair with a warm drink nearby in the afternoon light" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_EscONZ2m2tB6ydTFwAyG4dDOMnLF41Opf4q2Emc0B1X7mPrF94oG4QVq0zjhhuCIcalMDf7EdVTObUCJUjfdQsAoHy1UXpd1i8wwUh_PFMB8kJDhNL3vNI2FU0ECd2ylkwhGU3-rO4VCYZnCz16jbrlrK4hLdjtpT5BbhD3zjnzYRg-aFUxN5b6fb-OoTQNeXmEzHyacUlcmTWLkrKD6Jlu3I4yZOgT3tZGj58QXbwuvGxzFQ7BV7WE6Qj0SVlTZrHTXBl-CQAk');">
+</div>
+<div class="p-6 bg-white border border-t-0 border-[#f3efe7] rounded-b-2xl shadow-sm">
+<div class="flex items-center gap-2 mb-2 text-primary">
+<span class="material-symbols-outlined">local_cafe</span>
+<span class="font-bold text-sm tracking-wide">AFTERNOON</span>
+</div>
+<h3 class="text-2xl font-bold text-text-main mb-2">午後補給</h3>
+<p class="text-text-secondary text-lg">閱讀、休閒時的最佳良伴，補充體力，讓午後時光更充實。</p>
+</div>
+</div>
+<!-- Night -->
+<div class="group rounded-2xl overflow-hidden cursor-pointer">
+<div class="aspect-[4/3] bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Dim warm lamp light in a bedroom with a book on the nightstand" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_hFIapezlllQLgF5zBwMP5as0Npa4V94LFWdSuThJzNnCjOkPPBDbzI0aLOcFuZZgUijhQiqIZs0yvJ-lXuNZoSKR9XPOGNgiXDYviIpUXlgyg-_1u1wu_mH5agcn90qvimP-GLX_lBvZoWm7Z1HcYV6Jfv3VmZ5Yz7fEIXFZtxxm14CGszPz5PHyAqRqJfLCP6Z-d-3HQfXYmVtUdsUd6B_QJOOHRZZEygfV-lQQXBCXKa3UNefOMuoJBU4syM_kJNbpKtL1mCM');">
+</div>
+<div class="p-6 bg-white border border-t-0 border-[#f3efe7] rounded-b-2xl shadow-sm">
+<div class="flex items-center gap-2 mb-2 text-primary">
+<span class="material-symbols-outlined">nights_stay</span>
+<span class="font-bold text-sm tracking-wide">NIGHT</span>
+</div>
+<h3 class="text-2xl font-bold text-text-main mb-2">睡前安神</h3>
+<p class="text-text-secondary text-lg">溫潤口感搭配植萃配方，幫助放鬆身心，輕鬆擁抱深層好眠。</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action Banner -->
+<section class="py-16 bg-primary text-text-main">
+<div class="max-w-[960px] mx-auto px-4 text-center">
+<h2 class="text-3xl sm:text-5xl font-black mb-6">開始您的好眠養生計畫</h2>
+<p class="text-xl sm:text-2xl font-medium mb-10 opacity-90">現在加入會員，首購即享 9 折優惠，滿額再送體驗組。</p>
+<button class="bg-white text-text-main text-xl font-bold py-4 px-12 rounded-lg hover:bg-gray-100 transition-colors shadow-lg">
+                    立即前往選購
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-text-main text-[#fcfaf8] pt-16 pb-8">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+<!-- Brand Info -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 mb-2">
+<div class="size-8 text-primary flex items-center justify-center bg-white/10 rounded-full">
+<span class="material-symbols-outlined">local_cafe</span>
+</div>
+<h2 class="text-2xl font-black">food+ 食之味</h2>
+</div>
+<p class="text-[#e7dfcf] text-lg leading-relaxed">
+                        專注於熟齡營養，以全食物、無添加為本，致力於提供最安心、有效的機能飲品。
+                    </p>
+</div>
+<!-- Quick Links -->
+<div>
+<h3 class="text-xl font-bold mb-6 text-primary">快速連結</h3>
+<ul class="flex flex-col gap-3">
+<li><a class="text-lg hover:text-primary transition-colors" href="#">關於品牌</a></li>
+<li><a class="text-lg hover:text-primary transition-colors" href="#">全系列產品</a></li>
+<li><a class="text-lg hover:text-primary transition-colors" href="#">檢驗報告專區</a></li>
+<li><a class="text-lg hover:text-primary transition-colors" href="#">常見問題 FAQ</a></li>
+</ul>
+</div>
+<!-- Contact -->
+<div>
+<h3 class="text-xl font-bold mb-6 text-primary">聯絡我們</h3>
+<ul class="flex flex-col gap-4">
+<li>
+<p class="text-sm text-[#e7dfcf] mb-1">免付費客服專線</p>
+<a class="text-3xl font-black text-white hover:text-primary transition-colors" href="tel:0800-888-999">0800-888-999</a>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined mt-1 text-[#e7dfcf]">schedule</span>
+<div>
+<p class="text-lg">週一至週五</p>
+<p class="text-[#e7dfcf]">09:00 - 18:00</p>
+</div>
+</li>
+</ul>
+</div>
+<!-- Social / Newsletter -->
+<div>
+<h3 class="text-xl font-bold mb-6 text-primary">追蹤我們</h3>
+<div class="flex gap-4 mb-6">
+<a class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-text-main transition-colors" href="#">
+<span class="font-bold">FB</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-text-main transition-colors" href="#">
+<span class="font-bold">IG</span>
+</a>
+<a class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary hover:text-text-main transition-colors" href="#">
+<span class="font-bold">LINE</span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[#e7dfcf] text-sm">
+<p>© 2024 food+ 食之味. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white" href="#">隱私權政策</a>
+<a class="hover:text-white" href="#">服務條款</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

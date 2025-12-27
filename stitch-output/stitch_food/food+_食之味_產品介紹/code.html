@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-Hant"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>food+ 食之味 - 專為熟齡設計的機能食品</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#eea62b",
+                        "primary-hover": "#d99522",
+                        "background-light": "#fcfaf8",
+                        "background-dark": "#221b10",
+                        "text-main": "#1b160d",
+                        "text-secondary": "#4a453e",
+                        "surface-light": "#f3efe7",
+                        "surface-dark": "#3a3225",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "Noto Sans TC", "sans-serif"],
+                        "body": ["Noto Sans TC", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1d5db; 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af; 
+        }
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main font-display antialiased selection:bg-primary selection:text-white">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-surface-light dark:border-surface-dark shadow-sm">
+<div class="layout-container flex justify-center w-full">
+<div class="w-full max-w-[1280px] px-4 md:px-10 py-4 flex items-center justify-between">
+<!-- Logo -->
+<div class="flex items-center gap-3">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-4xl">local_florist</span>
+</div>
+<h1 class="text-text-main dark:text-white text-2xl font-bold tracking-tight">food+ 食之味</h1>
+</div>
+<!-- Desktop Nav Links -->
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-lg font-medium text-text-main dark:text-gray-200 hover:text-primary transition-colors" href="#">首頁</a>
+<a class="text-lg font-bold text-primary underline underline-offset-4 decoration-2" href="#">產品介紹</a>
+<a class="text-lg font-medium text-text-main dark:text-gray-200 hover:text-primary transition-colors" href="#">關於我們</a>
+<a class="text-lg font-medium text-text-main dark:text-gray-200 hover:text-primary transition-colors" href="#">聯絡我們</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-3">
+<button aria-label="Adjust Text Size" class="hidden md:flex items-center justify-center gap-2 h-12 px-5 bg-surface-light dark:bg-surface-dark text-text-main dark:text-white rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined">text_fields</span>
+<span class="text-base font-bold">字體大小</span>
+</button>
+<button aria-label="Cart" class="flex items-center justify-center gap-2 h-12 px-6 bg-primary text-text-main rounded-lg hover:bg-primary-hover transition-colors shadow-md transform active:scale-95">
+<span class="material-symbols-outlined">shopping_cart</span>
+<span class="text-base font-bold hidden sm:inline">購物車 (0)</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex flex-col items-center w-full">
+<!-- Hero Section -->
+<section class="w-full flex justify-center bg-surface-light dark:bg-surface-dark py-6 md:py-10">
+<div class="w-full max-w-[1280px] px-4 md:px-10">
+<div class="relative w-full rounded-2xl overflow-hidden min-h-[400px] md:min-h-[500px] flex items-center bg-cover bg-center" data-alt="Happy elderly couple cooking healthy food together in a bright kitchen" style='background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCEnkXzwwsNamb5Ojd0BQVEUeSJ57vEgWSQ236-_ZK5vnXjSecFMQzVZLQeKnAAK_ACpgvxFOE99mTQEQLk0g56cY5Ez5zDFPITbUEFvuno3O8qp-6nXQqaWyO0NEnz-jX2VircwOI9aAw6E3ILwwXtdbTMDnp01NYsH37mZountf5ZSlH9Q3-ObSdH7s8tji-7_0WiVfJFsPjgbj_Ah7iG6tgqU7SCSkouh0DVU5w-7Yx2SwQxv2uLlPbtvZfgvbSzTaLaYN90E-M");'>
+<div class="relative z-10 p-8 md:p-16 max-w-2xl flex flex-col gap-6">
+<span class="inline-block px-4 py-1 bg-primary text-text-main font-bold rounded-full w-fit text-sm md:text-base">
+                            醫師推薦 • 無添加 • 植萃機能
+                        </span>
+<h2 class="text-white text-4xl md:text-5xl lg:text-6xl font-black leading-[1.2] text-shadow">
+                            專為熟齡設計的<br/>全食物營養
+                        </h2>
+<p class="text-gray-100 text-lg md:text-xl font-medium leading-relaxed max-w-lg text-shadow">
+                            找回生活的活力與美味。我們嚴選天然食材，為50+族群打造好吸收、無負擔的營養補給。
+                        </p>
+<div class="pt-4">
+<button class="bg-primary hover:bg-primary-hover text-text-main text-lg md:text-xl font-bold py-4 px-8 rounded-xl shadow-lg transition-all flex items-center gap-2">
+                                查看所有產品
+                                <span class="material-symbols-outlined">arrow_downward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Filters (Chips) -->
+<section class="w-full max-w-[1280px] px-4 md:px-10 py-8 md:py-12">
+<div class="flex flex-col gap-6">
+<h3 class="text-2xl md:text-3xl font-bold text-text-main dark:text-white border-l-8 border-primary pl-4">
+                    選擇您的健康需求
+                </h3>
+<div class="flex flex-wrap gap-4">
+<button class="group flex items-center gap-3 px-6 py-4 rounded-xl bg-primary text-text-main shadow-md transition-all ring-2 ring-primary ring-offset-2 dark:ring-offset-background-dark">
+<span class="material-symbols-outlined text-2xl fill-1">check_circle</span>
+<span class="text-lg font-bold">全部商品</span>
+</button>
+<button class="group flex items-center gap-3 px-6 py-4 rounded-xl bg-surface-light dark:bg-surface-dark text-text-main dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all">
+<span class="material-symbols-outlined text-2xl group-hover:text-primary transition-colors">bolt</span>
+<span class="text-lg font-bold">活力體力</span>
+</button>
+<button class="group flex items-center gap-3 px-6 py-4 rounded-xl bg-surface-light dark:bg-surface-dark text-text-main dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all">
+<span class="material-symbols-outlined text-2xl group-hover:text-primary transition-colors">spa</span>
+<span class="text-lg font-bold">消化順暢</span>
+</button>
+<button class="group flex items-center gap-3 px-6 py-4 rounded-xl bg-surface-light dark:bg-surface-dark text-text-main dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all">
+<span class="material-symbols-outlined text-2xl group-hover:text-primary transition-colors">bedtime</span>
+<span class="text-lg font-bold">好眠對策</span>
+</button>
+<button class="group flex items-center gap-3 px-6 py-4 rounded-xl bg-surface-light dark:bg-surface-dark text-text-main dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all">
+<span class="material-symbols-outlined text-2xl group-hover:text-primary transition-colors">health_and_safety</span>
+<span class="text-lg font-bold">關鍵保養</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="w-full max-w-[1280px] px-4 md:px-10 pb-16">
+<h3 class="sr-only">產品列表</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+<!-- Product Card 1 -->
+<article class="flex flex-col bg-white dark:bg-surface-dark rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<div class="absolute top-4 left-4 z-10 flex flex-col gap-2">
+<span class="bg-primary text-text-main text-sm font-bold px-3 py-1 rounded-full shadow-sm">熱銷 TOP 1</span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Close up of golden pumpkin soup powder in a wooden bowl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBznAtVQqW5KYVeRM2j5jZnRGewSPGfIIGKo9RBFNKZ_TuNCTj9RhGOJjJFt4ckcqtmj1pxf78C-ekkm_bZns5y0yGkDYTXMhJbUbSCbyYTAspTcWSTJjaXSECH936oop-xQ18Hv3Nwk82OxEcMHvrtYKmfYH5udRkXGw9e9WHeUnopNDJKYT-4P71_xCfC-lDFQD9KBbjioDnq-10oh5oDbBExQxIkP1Ebf8RZnxijkAKDrsxfEPuAXRkqNb9lI6qmGLRckx5Au4M");'></div>
+</div>
+<div class="flex flex-col flex-1 p-6 gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="text-xs font-medium bg-green-100 text-green-800 px-2 py-1 rounded">全素</span>
+<span class="text-xs font-medium bg-amber-100 text-amber-800 px-2 py-1 rounded">高纖</span>
+</div>
+<h4 class="text-2xl font-bold text-text-main dark:text-white leading-tight">黃金南瓜全穀飲</h4>
+<p class="text-text-secondary dark:text-gray-300 text-base leading-relaxed line-clamp-2">
+                            嚴選台灣在地南瓜，搭配多種全穀物，無添加糖，富含膳食纖維，幫助消化順暢。
+                        </p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-600 flex flex-col gap-4">
+<div class="flex items-end justify-between">
+<span class="text-3xl font-bold text-primary">NT$ 880</span>
+<span class="text-sm text-gray-500 line-through mb-1">NT$ 1,080</span>
+</div>
+<button class="w-full bg-surface-light dark:bg-gray-700 hover:bg-primary dark:hover:bg-primary text-text-main dark:text-white hover:text-text-main font-bold text-lg py-4 rounded-xl transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">shopping_cart</span>
+                                加入購物車
+                            </button>
+</div>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="flex flex-col bg-white dark:bg-surface-dark rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<div class="absolute top-4 left-4 z-10">
+<span class="bg-blue-100 text-blue-800 text-sm font-bold px-3 py-1 rounded-full shadow-sm border border-blue-200">醫師推薦</span>
+</div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Black sesame powder arranged nicely on a spoon" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC7qJHBkhEJzv2ciu2qLZ5i-erJbVwnOk7-f1pZ9PE8iQPTwcqTbstRu7_g8w6kygXt2v896PLGluMvM58lQmEMtlDlPwF3XBKus-j74WSbid__Se3OWH7NGVGNLwsc9OlRbHBfWb7GwBnJvMXZyQXkqpULmhDNfzxYfHD1xEmHg_jyEi22iRtM5qV59DPzrEw8zJCcwAgUFLjSV6kOyrFVADz6NT4buCbW-HBUyJzOINv57c-DPlLPws5inN6HkWPMDelIezHbQEw");'></div>
+</div>
+<div class="flex flex-col flex-1 p-6 gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="text-xs font-medium bg-purple-100 text-purple-800 px-2 py-1 rounded">助眠</span>
+<span class="text-xs font-medium bg-gray-100 text-gray-800 px-2 py-1 rounded">高鈣</span>
+</div>
+<h4 class="text-2xl font-bold text-text-main dark:text-white leading-tight">黑芝麻高鈣安睡粉</h4>
+<p class="text-text-secondary dark:text-gray-300 text-base leading-relaxed line-clamp-2">
+                            獨家高鈣配方，添加色胺酸幫助入睡。濃郁芝麻香氣，溫暖您的每一個夜晚。
+                        </p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-600 flex flex-col gap-4">
+<div class="flex items-end justify-between">
+<span class="text-3xl font-bold text-primary">NT$ 950</span>
+<span class="text-sm text-gray-500 line-through mb-1">NT$ 1,150</span>
+</div>
+<button class="w-full bg-surface-light dark:bg-gray-700 hover:bg-primary dark:hover:bg-primary text-text-main dark:text-white hover:text-text-main font-bold text-lg py-4 rounded-xl transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">shopping_cart</span>
+                                加入購物車
+                            </button>
+</div>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="flex flex-col bg-white dark:bg-surface-dark rounded-2xl overflow-hidden shadow-lg border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow group">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Bowl of red quinoa porridge with healthy toppings" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD8qbudNt6SCia11k4kuvpiGKAof9aEYMy5B9_UY-Pdi_Lrk7AGwfeGMQFfqPylSgZWMpswfx0R6-OXtOadneD4hHT1qLo-oKs8azZC_dDFsysWHiKoXwtXb3z-01GiF6G10FVCySpRBfAegTquurBTJT9hdS7eGmY7QtblFmRvl8k6HsbKvdfbdDeX4TYEubrC4BL0WTotS7PX_9SGvxsrLlfbo8ju64PBJjooRDFL6rhbcC-VmRtd4prFAqz0sWgGVStWRcjc54k");'></div>
+</div>
+<div class="flex flex-col flex-1 p-6 gap-4">
+<div class="flex flex-wrap gap-2">
+<span class="text-xs font-medium bg-red-100 text-red-800 px-2 py-1 rounded">營養</span>
+<span class="text-xs font-medium bg-orange-100 text-orange-800 px-2 py-1 rounded">易消化</span>
+</div>
+<h4 class="text-2xl font-bold text-text-main dark:text-white leading-tight">紅藜麥養生粥</h4>
+<p class="text-text-secondary dark:text-gray-300 text-base leading-relaxed line-clamp-2">
+                            選用超級食物紅藜麥，口感綿密好吞嚥，適合牙口不好的長輩，營養滿分。
+                        </p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-600 flex flex-col gap-4">
+<div class="flex items-end justify-between">
+<span class="text-3xl font-bold text-primary">NT$ 720</span>
+</div>
+<button class="w-full bg-surface-light dark:bg-gray-700 hover:bg-primary dark:hover:bg-primary text-text-main dark:text-white hover:text-text-main font-bold text-lg py-4 rounded-xl transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">shopping_cart</span>
+                                加入購物車
+                            </button>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Product Detail Highlight Section -->
+<section class="w-full bg-surface-light dark:bg-surface-dark py-12 md:py-20">
+<div class="max-w-[1280px] mx-auto px-4 md:px-10">
+<div class="flex flex-col lg:flex-row gap-12 items-start">
+<!-- Left: Info -->
+<div class="flex-1 flex flex-col gap-8">
+<div>
+<span class="text-primary font-bold text-xl mb-2 block">明星商品解析</span>
+<h3 class="text-3xl md:text-4xl font-bold text-text-main dark:text-white mb-4">為什麼選擇黃金南瓜全穀飲？</h3>
+<p class="text-lg text-text-secondary dark:text-gray-300 leading-relaxed">
+                                我們深知隨著年齡增長，消化與代謝功能會逐漸改變。因此，food+ 食之味研發團隊特別調配了這款好吸收、高營養密度的全穀飲。
+                            </p>
+</div>
+<!-- Icons -->
+<div class="grid grid-cols-2 gap-6">
+<div class="flex items-start gap-4 p-4 bg-white dark:bg-[#4a4030] rounded-xl shadow-sm">
+<div class="bg-primary/20 p-3 rounded-full text-primary">
+<span class="material-symbols-outlined text-3xl">fiber_manual_record</span>
+</div>
+<div>
+<h5 class="font-bold text-lg text-text-main dark:text-white">膳食纖維豐富</h5>
+<p class="text-sm text-text-secondary dark:text-gray-300 mt-1">每包含有 3 顆高麗菜的纖維量</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white dark:bg-[#4a4030] rounded-xl shadow-sm">
+<div class="bg-primary/20 p-3 rounded-full text-primary">
+<span class="material-symbols-outlined text-3xl">no_food</span>
+</div>
+<div>
+<h5 class="font-bold text-lg text-text-main dark:text-white">無添加糖</h5>
+<p class="text-sm text-text-secondary dark:text-gray-300 mt-1">健康無負擔，適合控糖族群</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white dark:bg-[#4a4030] rounded-xl shadow-sm">
+<div class="bg-primary/20 p-3 rounded-full text-primary">
+<span class="material-symbols-outlined text-3xl">local_dining</span>
+</div>
+<div>
+<h5 class="font-bold text-lg text-text-main dark:text-white">容易消化</h5>
+<p class="text-sm text-text-secondary dark:text-gray-300 mt-1">細緻粉末，快速沖泡好吸收</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 bg-white dark:bg-[#4a4030] rounded-xl shadow-sm">
+<div class="bg-primary/20 p-3 rounded-full text-primary">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<div>
+<h5 class="font-bold text-lg text-text-main dark:text-white">SGS 檢驗合格</h5>
+<p class="text-sm text-text-secondary dark:text-gray-300 mt-1">470項農藥檢驗零檢出</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Nutrition Table -->
+<div class="w-full lg:w-[450px] bg-white dark:bg-background-dark p-6 md:p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700">
+<h4 class="text-xl font-bold text-text-main dark:text-white mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">analytics</span>
+                            營養標示 (每份 30g)
+                        </h4>
+<div class="flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
+<div class="flex justify-between py-3 text-lg">
+<span class="text-text-secondary dark:text-gray-300">熱量</span>
+<span class="font-bold text-text-main dark:text-white">112 kcal</span>
+</div>
+<div class="flex justify-between py-3 text-lg">
+<span class="text-text-secondary dark:text-gray-300">蛋白質</span>
+<span class="font-bold text-text-main dark:text-white">5.2 g</span>
+</div>
+<div class="flex justify-between py-3 text-lg">
+<span class="text-text-secondary dark:text-gray-300">脂肪</span>
+<span class="font-bold text-text-main dark:text-white">1.8 g</span>
+</div>
+<div class="flex justify-between py-3 text-lg">
+<span class="text-text-secondary dark:text-gray-300">碳水化合物</span>
+<span class="font-bold text-text-main dark:text-white">18.5 g</span>
+</div>
+<div class="flex justify-between py-3 text-lg">
+<span class="text-text-secondary dark:text-gray-300">膳食纖維</span>
+<span class="font-bold text-primary">4.8 g</span>
+</div>
+<div class="flex justify-between py-3 text-lg">
+<span class="text-text-secondary dark:text-gray-300">鈉</span>
+<span class="font-bold text-text-main dark:text-white">15 mg</span>
+</div>
+</div>
+<div class="mt-6 bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+<p class="text-sm text-blue-800 dark:text-blue-200 leading-relaxed">
+                                * 本產品含有麩質之穀物、堅果類及其製品，不適合對其過敏體質者食用。
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Trust Footer -->
+<footer class="w-full bg-[#4a453e] text-white pt-16 pb-8">
+<div class="max-w-[1280px] mx-auto px-4 md:px-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12 border-b border-gray-600 pb-12">
+<!-- Brand -->
+<div class="col-span-1 lg:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">local_florist</span>
+<h2 class="text-2xl font-bold">food+ 食之味</h2>
+</div>
+<p class="text-gray-300 mb-6">專注於熟齡健康的營養專家，陪伴您享受健康美味的每一天。</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<!-- Facebook Icon Placeholder -->
+<span class="font-bold">f</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center hover:bg-primary transition-colors" href="#">
+<!-- Line Icon Placeholder -->
+<span class="font-bold">L</span>
+</a>
+</div>
+</div>
+<!-- Contact (Large for Seniors) -->
+<div class="col-span-1 md:col-span-1 lg:col-span-2">
+<h4 class="text-lg font-bold mb-6 text-primary">客戶服務</h4>
+<div class="flex flex-col gap-4">
+<p class="text-gray-300">免費諮詢專線 (週一至週五 09:00-18:00)</p>
+<a class="text-4xl md:text-5xl font-black text-white hover:text-primary transition-colors tracking-wider" href="tel:0800-123-456">
+                                0800-123-456
+                            </a>
+<p class="text-gray-300 mt-2">如果您對產品有任何疑問，歡迎隨時來電，我們有專業營養師為您解答。</p>
+</div>
+</div>
+<!-- Links -->
+<div class="col-span-1 lg:col-span-1">
+<h4 class="text-lg font-bold mb-6 text-primary">快速連結</h4>
+<ul class="flex flex-col gap-4">
+<li><a class="text-lg text-gray-300 hover:text-white hover:underline underline-offset-4" href="#">關於我們</a></li>
+<li><a class="text-lg text-gray-300 hover:text-white hover:underline underline-offset-4" href="#">常見問題</a></li>
+<li><a class="text-lg text-gray-300 hover:text-white hover:underline underline-offset-4" href="#">退換貨政策</a></li>
+<li><a class="text-lg text-gray-300 hover:text-white hover:underline underline-offset-4" href="#">隱私權條款</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm gap-4">
+<p>© 2023 food+ 食之味. All rights reserved.</p>
+<div class="flex gap-4">
+<span>SGS 認證</span>
+<span>HACCP 認證</span>
+<span>ISO 22000</span>
+</div>
+</div>
+</div>
+</footer>
+</main>
+</body></html>
